@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//https://github.com/ifmt-cba/lingprog20242   link professor 
+
+
+
 void main() {
     int x = 0; //criando uma variável inteira
     printf("Valor de x: %d\n",x);
@@ -21,5 +25,5 @@ void main() {
     printf("\nDigite o valor de x: ");
     scanf("%d", &x);
     printf("O valor digitado foi %d\n", x);
-    printf("Olá Mundo!");
+    
 }
