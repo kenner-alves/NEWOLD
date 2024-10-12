@@ -27,7 +27,12 @@ void q4() {
           printf("valor digitado foi: %d  ", num );
 }
 //5. Faça um programa que leia dois números reais e os imprima.
-
+void q5() {
+    float num1 = 0;
+    float num2 = 0;
+    printf("digite o primeiro nuemro %f" num1);
+    scanf("")
+}
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
 
