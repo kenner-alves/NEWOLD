@@ -28,16 +28,38 @@ void q4() {
 }
 //5. Faça um programa que leia dois números reais e os imprima.
 void q5() {
-    float num1 = 0;
-    float num2 = 0;
-    printf("digite o primeiro nuemro %f" num1);
-    scanf("")
+    float num1,num2;
+    printf("digite o primeiro numero:" );
+    scanf("%f",&num1);
+    printf("digite o segundo numero:" );
+    scanf("%f",&num2);
+    printf("numero digitado foi: %.2f e %.2f\n", num1, num2);
+    
+     
 }
 //6. Faça um programa que leia um número inteiro e imprima o seu
 //   antecessor e o seu sucessor.
-
+void q6() {
+    int num, antecessor, sucessor;
+    printf("digite um numero:" );
+    scanf("%d", &num);
+    antecessor = num -1;
+    sucessor = num + 1;
+    printf("antecessor: %d\n", antecessor);
+    printf("sucessor: %d\n", sucessor); 
+}
 //7. Faça um programa que leia o nome o endereço e o telefone de
 //   um cliente e ao final, imprima esses dados.
+void q7 () {
+    char nome[50], endereco[50], telefone[15];
+    printf("nome: ");
+    scanf(" %50[^\n]", nome );
+    printf("endereço: ");
+    scanf(" %50[^\n]", endereco );
+    printf("telefone: ");
+    scanf(" %15[^\n]", telefone );
+    printf("%s\n %s\n %s\n",nome,endereco,telefone);
+}
 
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
@@ -103,6 +125,6 @@ void q5() {
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q4();
+    q6();
     return EXIT_SUCCESS;
 }
