@@ -64,16 +64,92 @@ void q7 () {
 //8. Faça um programa que leia dois números inteiros e imprima a
 //   subtração deles.
 
+void q8() {
+    int num1, num2, resultado;
+
+    
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+
+    
+    resultado = num1 - num2;
+    
+    printf("A subtração de %d e %d é: %d\n", num1, num2, resultado);
+
+    
+}
+
 //9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+
+void q9() {
+    float numero, um_quarto;
+
+    printf("Digite um número real: ");
+    scanf("%f", &numero);
+
+    um_quarto = numero / 4;
+
+    printf("Um quarto de %.2f é: %.2f\n", numero, um_quarto);
+
+}
 
 //10. Faça um programa que leia três números reais e calcule a
 //    média aritmética destes números. Ao final, o programa deve
 //    imprimir o resultado do cálculo.
+void q10 () {
+    
+    float num1, num2, num3, media;
+
+    printf("Digite o primeiro número: ");
+    scanf("%f", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &num2);
+    printf("Digite o terceiro número: ");
+    scanf("%f", &num3);
+
+    media = (num1 + num2 + num3) / 3;
+    
+    printf("A média aritmética dos números %.2f, %.2f e %.2f é: %.2f\n", num1, num2, num3, media);
+
+
+}
 
 //11. Faça um programa que leia dois números reais e calcule as
 //    quatro operações básicas entre estes dois números, adição,
 //    subtração,multiplicação e divisão. Ao final, o programa
 //    deve imprimir os resultados dos cálculos.
+    void q11() {
+    float num1, num2;
+    float soma, subtracao, multiplicacao, divisao;
+
+    
+    printf("Digite o primeiro número: ");
+    scanf("%f", &num1);
+    printf("Digite o segundo número: ");
+    scanf("%f", &num2);
+
+    
+    soma = num1 + num2;
+    subtracao = num1 - num2;
+    multiplicacao = num1 * num2;
+
+    
+    if (num2 != 0) {
+        divisao = num1 / num2;
+        printf("Divisão: %.2f\n", divisao);
+    } else {
+        printf("Divisão: Indefinida (divisão por zero)\n");
+    }
+
+    
+    printf("Soma: %.2f\n", soma);
+    printf("Subtração: %.2f\n", subtracao);
+    printf("Multiplicação: %.2f\n", multiplicacao);
+
+
+}
 
 //12. Faça um programa que leia um número real e calcule o
 //    quadrado deste número. Ao final, o programa deve
@@ -125,6 +201,6 @@ void q7 () {
 //    necessário também ler o valor da cotação do dólar.
 
 int main() {
-    q6();
+    q11();
     return EXIT_SUCCESS;
 }
