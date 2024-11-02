@@ -50,26 +50,78 @@ void exemploCaso() {
 
 //1. Faça um programa que leia dois valores numéricos inteiros e efetue a adição, caso o resultado seja maior que 10, apresentá-lo.
 void questao01() {
+    
+
+{
+    int num1, num2, soma;
+    
+    printf("Digite o primeiro valor inteiro: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo valor inteiro: ");
+    scanf("%d", &num2);
+    soma = num1 + num2;
+    if (soma > 10) {
+        printf("A soma é: %d\n", soma);
+    } else {
+        printf("A soma não é maior que 10.\n");
+    }
+
+    
+}
+
 
 }
 
 //2. Faça um programa que leia dois valores inteiros e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8, caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
 void questao02() {
 
+ {
+    int num1, num2, soma;
+    printf("Digite o primeiro valor inteiro: ");
+    scanf("%d", &num1);
+    printf("Digite o segundo valor inteiro: ");
+    scanf("%d", &num2);
+    soma = num1 + num2;
+    if (soma > 20) {
+        soma += 8;  
+    } else {
+        soma -= 5;  
+    }
+    printf("O resultado final é: %d\n", soma);
+}
+
 }
 
 //3. Faça um programa que leia um número e imprima uma das duas mensagens: "É múltiplo de 3"ou "Não é múltiplo de 3".
 void questao03() {
-	
+{
+    int numero;
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    if (numero % 3 == 0) {
+        printf("É múltiplo de 3\n");
+    } else {
+        printf("Não é múltiplo de 3\n");
+    }
+}
 }
 
 //4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 void questao04() {
 	
+    int numero;
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+    if (numero % 5 == 0) {
+        printf("É múltiplo de 5\n");
+    } else {
+        printf("Não é múltiplo de 5\n");
+    }
 }
 
 //5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 void questao05() {
+
 
 }
 
