@@ -44,8 +44,23 @@ void exemploPrimeiroMilhao() {
 }
 
 //1.Faça um programa que imprima todos os números de 1 até 100.
+void q01 (){
+    
+    for (int i = 1; i <= 100; i++) {
+        printf("%d\n", i);  
+    }
+    
+}
+
+
 
 //2. Faça um programa que imprima todos os números pares de 100 até 1.
+void q02() {   
+    for (int i = 100; i >= 1; i -= 2) {
+        printf("%d\n", i);  
+    }
+    
+}
 
 //3. Faça um programa que imprima os múltiplos de 5, no intervalo de 1 até 500.
         
@@ -296,6 +311,6 @@ void exemploPrimeiroMilhao() {
 //idade.
 
 int main() {
-    ();
+   q02 ();
 	return EXIT_SUCCESS;
 }
